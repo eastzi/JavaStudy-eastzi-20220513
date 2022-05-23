@@ -39,6 +39,7 @@ public class Method02 {
 			if(i == 6) {
 				System.out.println("메소드 탈출");
 				return; //void라 반환이 없지만, i가 6일때 메소드탈출이라는 강제반환이 일어남. 
+				//break
 			}
 		}
 		System.out.println("test6가 정상 종료");
