@@ -1,0 +1,7 @@
+5/24
+1. 클래스 생성자
+2. 패키지 내부 패키지생성 hierarchical
+3. private - 정보의 은닉화, 캡슐화
+4. 정보은닉
+getter
+setter 

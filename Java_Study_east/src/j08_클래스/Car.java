@@ -1,4 +1,4 @@
-package J08_클래스;
+package j08_클래스;
 
 public class Car {
 	String company;

@@ -1,4 +1,4 @@
-package J08_클래스;
+package j08_클래스;
 
 /*
  * 1. Car라는 클래스를 만든다.
@@ -21,7 +21,7 @@ package J08_클래스;
 public class CarMain {
 
 	public static void main(String[] args) {
-		Car car = new Car();
+		Car car = new Car(); //생성자 - 주소값을 반환
 		Car car2 = new Car();
 		Car car3 = new Car();
 		
