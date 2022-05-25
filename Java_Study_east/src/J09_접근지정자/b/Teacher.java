@@ -7,7 +7,7 @@ public class Teacher {
 	private String phone;
 	
 	//알 + 쉬 + S => set,get
-	public String getName() {
+	public String getName() { //private 변수에대한 값을 우회경로로 지정목적
 		return name;
 	}
 	public void setName(String name) {
