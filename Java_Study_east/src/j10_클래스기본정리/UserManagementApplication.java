@@ -8,7 +8,10 @@ public class UserManagementApplication {
 		
 		UserManagementController userManagementController = new UserManagementController();
 		userManagementController.createUser();
+		userManagementController.createUser();
+		userManagementController.createUser();
 		
 	}
 
 }
+
