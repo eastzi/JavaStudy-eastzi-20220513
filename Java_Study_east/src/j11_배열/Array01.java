@@ -43,7 +43,7 @@ public class Array01 {
 		for(int i = 0; i < strArray.length; i++) {
 			System.out.println(strArray[i]); //모든 class의 기본값은 null. class 변수에는 주소값이 옴. 
 											//null=주소값.(주소의 0번째 주소)
-											//배열의 주소 = 배열내 첫번째 요소의 주소
+											//배열의 주소 = 배열내 첫번째 요소(변수대신 요소라함)의 주소
 		}
 		
 	}

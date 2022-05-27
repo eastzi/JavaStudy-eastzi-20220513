@@ -9,13 +9,13 @@ public class UserManagementController {
 	//클래스를 정의할 때 미리 주입하면 메모리 낭비.
 	private User[] users;
 	
-	public UserManagementController() {//(생성자안에서 밑에)클래스를 사용할때(생성될 때),
+	public UserManagementController(UserService userService) {//(생성자안에서 밑에)클래스를 사용할때(생성될 때),
 		this.userService = new UserService(); //인스턴스 생성(할당)
 		users = new User[2];
 	}
 	
 	public void createUser() {
-		int indexResult = findEmptyInUsers(); 
+		int indexResult = findEmptyInUsers(); //메소드는 공간이 있는지 체크
 		if(indexResult != -1) {
 			//User user = userService.insertUser(); // 매소드 호출(=함수 실행) 뒤 반환 값(user주소) 저장.
 			users[indexResult] = userService.insertUser();
