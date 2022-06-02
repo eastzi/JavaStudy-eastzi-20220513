@@ -3,6 +3,15 @@ package j18_최상위클래스.entity;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import javax.annotation.processing.Generated;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 /*
  * 상품 정보 클래스(Entity Class)
  * 
@@ -31,10 +40,12 @@ public class Product {
 		private int category;
 		private LocalDate productionDate;
 		
+		//@NoArgsConstructor
 		public Product() {
 			// TODO Auto-generated constructor stub
 		}
-
+		
+		//@AllArgsConstructor
 		public Product(int productCode, String productName, int category, LocalDate productionDate) {
 			super();
 			this.productCode = productCode;
@@ -43,6 +54,8 @@ public class Product {
 			this.productionDate = productionDate;
 		}
 
+		//@Getter
+		//@Setter
 		public int getProductCode() {
 			return productCode;
 		}
@@ -75,6 +88,7 @@ public class Product {
 			this.productionDate = productionDate;
 		}
 
+		//@EqualsAndHashCode
 		@Override
 		public int hashCode() {
 			return Objects.hash(category, productCode, productName, productionDate);
@@ -94,6 +108,7 @@ public class Product {
 					&& Objects.equals(productionDate, other.productionDate);
 		}
 
+		//@ToString
 		@Override
 		public String toString() {
 			return "Product [productCode=" + productCode + ", productName=" + productName + ", category=" + category
