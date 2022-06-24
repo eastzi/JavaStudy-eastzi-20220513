@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/index") //=> 요청주소(가장중요)/ 서블릿마다 요청에 따른 동작이(service) 달라짐
+@WebServlet("/index123123") //=> 요청주소(가장중요)/ 서블릿마다 요청에 따른 동작이(service) 달라짐
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
